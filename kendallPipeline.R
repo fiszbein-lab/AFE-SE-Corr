@@ -1,6 +1,6 @@
 #!/usr/bin/env Rscript
 library(methods)
-args <- c("/projectnb2/evolution/zwakefield/GTEx_dl/runs/", "/projectnb2/evolution/zwakefield/GTEx_dl/upsampleOut2/")
+args <- c("/dataDirectory/runs/", "/outputDirectory/")
 samp_dir <- args[1]
 out_dir <- args[2]
 library(VennDiagram)
