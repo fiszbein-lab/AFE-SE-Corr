@@ -53,3 +53,16 @@ quantExt_toBED() & SEquantExt_toBED(): split into sextiles, plot distributions, 
 Final Object
 
 Returns a list of all outputs, saved as PipeOut.RDS.
+
+### Outputs & File Formats
+Intermediate RDS in <output_dir>:
+concatAFE.RDS, concatSE.RDS, mergeAFE.RDS, mergeSE.RDS,
+dfPerSE.RDS, rho.RDS, classifyRho.RDS,
+sextileRho.RDS, TSSdis.RDS, p20kb.RDS
+
+Final BEDs:
+AFE stratified: afe.s1.bed … afe.s6.bed
+SE stratified: se.s1.bed … se.s6.bed
+s3 and s4 are combined to reflect experimental profile of quintiles
+
+PipeOut.RDS: named list of all main objects for quick load.
