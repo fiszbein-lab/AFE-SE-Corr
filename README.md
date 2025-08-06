@@ -4,7 +4,7 @@ R scripts for analysis of correlation between AFE and SE in GTEx samples
 ## Overview
 This R script orchestrates a multi-sample analysis linking Alternative First Exon (AFE) usage to Skipped Exon (SE) splicing events, computing per-event correlations, stratifying by genomic distance, and exporting BED files for downstream genomic analyses or visualization.
 
-### Directory Structure & Input Files
+## Directory Structure & Input Files
 project/
 ├─ samples/
 │  ├─ SRR000001/
@@ -15,7 +15,7 @@ project/
 │  └─ SE_AFE_Corr.R
 └─ outputs/
 
-### Pipeline Steps
+## Pipeline Steps
 List sample folders matching the pattern (e.g. SRR*).
 
 Concatenate AFE & SE
@@ -54,7 +54,7 @@ Final Object
 
 Returns a list of all outputs, saved as PipeOut.RDS.
 
-### Outputs & File Formats
+## Outputs & File Formats
 Intermediate RDS in <output_dir>:
 concatAFE.RDS, concatSE.RDS, mergeAFE.RDS, mergeSE.RDS,
 dfPerSE.RDS, rho.RDS, classifyRho.RDS,
